@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-page background styling */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Background Image */
+        .background {
+            background: url('hacking-background-8fg6goputcw7cwqn.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Vertical stack for content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Space between the divs */
+        }
+
+        /* Content container */
+        .content {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            width: 80%; /* Optional: Set a max width for better visuals */
+        }
+
+        /* Heading and Paragraph Styling */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Link styling for downloading */
+        .download-link {
+            font-size: 1.2em;
+            color: #191818;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Background Image -->
+<div class="background"></div>
+
+<!-- Centered container -->
+<div class="container">
+    <!-- First Content -->
+    <div class="content">
+        <h1>Welcome to Digital Hunt</h1>
+        <p>Your ultimate digital adventure awaits. Click the link below to download the resources!</p>
+    </div>
+
+    <!-- Second Content -->
+    <div >
+        <a href="Hunt.zip" class="download-link" download>Download ZIP File</a>
+    </div>
+</div>
+
+</body>
+</html>
