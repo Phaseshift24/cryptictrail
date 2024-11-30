@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map with Text</title>
+    <style>
+        /* Remove default margins and make image fill the screen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Text overlay styling */
+        .overlay-text {
+            position: absolute;
+            top: 20%; /* Adjust vertical position */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .overlay-text1 {
+            position: absolute;
+            bottom: 100px; /* Adjust vertical position */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .overlay-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .overlay-text p {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Image with usemap to fill the page -->
+    <img src="bgr1.jpg" alt="Workplace" usemap="#workmap">
+
+    <!-- Overlay text -->
+    <div class="overlay-text">
+        <h1>Welcome to Cryptic Trial</h1>
+    </div>
+
+    <map name="workmap">
+        <!-- Adjusted coordinates for full-page image -->
+        <area shape="rect" coords="760,320,770,340" alt="Computer" href="index.html">
+    </map>
+
+    <div class="overlay-text1">
+        <p>I am a letter,but not just for writing. I represent a value that's quite exciting.<br/>
+            In algebra, i stand for what's unknown. Solve for me, and the answer is shown.
+            if 2x = 10, what do you get?
+            Solve me now, and you'll be set.
+            What am I?
+        </p>
+    </div>
+</body>
+</html>
