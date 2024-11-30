@@ -50,6 +50,25 @@
             padding: 20px;
             border-radius: 10px;
         }
+        .overlay-text2 {
+            position: absolute;
+            top: 46%; /* Adjust vertical position */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .prevent-select {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+            color:rgba(0, 0, 0, 0)
+        }
+
+
 
         .overlay-text h1 {
             font-size: 2.5em;
@@ -70,14 +89,9 @@
     <div class="overlay-text">
         <h1>Welcome to Cryptic Trail</h1>
     </div>
-
-    <map name="workmap">
-        <!-- Area mappings (ensure these coords match your design) -->
-        <!-- Rectangle (MacBook users) -->
-        <area shape="rect" coords="717,447,722,452" alt="MacBook Section" href="social.html">
-        <!-- Rectangle (Windows users) -->
-        <area shape="rect" coords="760,320,770,340" alt="Windows Section" href="social.html">
-    </map>
+    <div class="overlay-text2">
+        <a class="prevent-select" href="social.html"><p class="prevent-select">.</p></a>
+    </div>
 
     <div class="overlay-text1">
         <p>1). I am a letter, but not just for writing. I represent a value that's quite exciting.
